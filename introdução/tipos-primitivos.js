@@ -16,3 +16,6 @@ const n2 = 1.1
 console.log(`o tipo de n1 é ${typeof n1} e o seu valor é ${n1}`)
 console.log(`o tipo de n2 é ${typeof n2} e o seu valor é ${n2}`)
 
+
+const isValid = true
+console.log(`IsValid: ${isValid}`)
