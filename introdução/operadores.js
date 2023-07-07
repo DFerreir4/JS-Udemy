@@ -32,5 +32,23 @@ let i = 0
 i++
 console.log(i)
 
+/*
+Comparação
+
+ igualdade de valor ==
+ igualdade de valor e tipo === 
 
 
+*/
+
+
+console.log(n1 == "10")
+console.log(n1 === "10")
+console.log(n2 < 10)
+console.log(n2 <= 10)
+console.log(n2 >= 11)
+console.log(n2 <= 11)
+
+console.log("testando")
+console.log(n1 != "10") //false
+console.log(n1 !== "10") //true
