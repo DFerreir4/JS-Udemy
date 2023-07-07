@@ -26,5 +26,11 @@ let n3 = 20
 n3 *= 2
 console.log(`O valor de n3 é ${n3}`)
 
+// INCREMENTO E DECREMENTO
+
+let i = 0
+i++
+console.log(i)
+
 
 
