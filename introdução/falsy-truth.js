@@ -1,5 +1,5 @@
 // valores falsy -> 0, "", NaN, undefined, null, false
-// truth -> todos os demais.
+// truthy -> todos os demais.
 
 
 if("false"){ //qualquer string != " "
