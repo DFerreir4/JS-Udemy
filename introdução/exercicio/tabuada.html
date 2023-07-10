@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Tabuada.</title>
+    <style>
+        main{
+            background-color: yellow;
+            color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="tabuada"></div>
+    </main>
+
+
+    <script>
+        let tabuada = document.getElementById('tabuada')
+        let n1 = prompt("Digite o número da tabuada!")
+        let resultado = "<table><tr>"
+        let multiplicacao = contador*contador2
+        let linha = "" + contador + "x" + contador2 + "=" + multiplicacao + "<br>"
+         
+        for(let contador = 0; contador <= 10; contador++){
+                resultado = resultado + "<td>"
+            for(let contador2 = 0; contador2 <= 10; contador2++){
+                    resultado = resultado + "</td>"
+                
+            }
+            if(i % 5 === 0){
+                resultado = resultado + "<tr></tr>"
+            }     
+        }
+
+        resultado = resultado + "</tr></table>"
+        tabuada.append(resultado)
+        
+       
+        
+         
+
+    </script>
+</body>
+</html>
