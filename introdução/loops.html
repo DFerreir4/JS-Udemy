@@ -12,11 +12,19 @@
         let n1 = prompt('Digite um número:')
         
         let contador = 0
+
         while(contador <= 10){
             document.write(
             `${n1} x ${contador} = ${n1 * contador} <br>`
+
         )
         contador++
+       
+        if(contador > 11){
+            alert('Digitou número maior que 10')
+            //break
+            return
+        }
         }
 
         document.write("Saiu do looping while <br>")
@@ -25,11 +33,15 @@
         
        
             for(let contador = 0; contador <= 10; contador++){
+                if(contador === 6){
+                    continue
+                }
             document.write(
             `${n1} x ${contador} = ${n1 * contador} <br>`
             )
             }
-        
+            
+            document.write("Saiu do looping for <br>")
         
 
     </script>
