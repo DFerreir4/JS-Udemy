@@ -3,47 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício Tabuada.</title>
-    <style>
-        main{
-            background-color: yellow;
-            color: blue;
-            font-family: Arial, Helvetica, sans-serif;
-            width: 600px;
-            height: 600px;
-        }
-    </style>
+    <title>Exercício Tabuada</title>
 </head>
 <body>
-    <main>
-        <div id="tabuada"></div>
-    </main>
+    <h1>Funções - Tabuada</h1>
+    <input type="button" value="Mostrar Tabuada" id="mtbotao" onclick="mostrarTabuada()">
+    <input type="button" value="Limpar Tabuada" id="ltbotao" onclick="limparTabuada()">
 
+    <div id="tabuada"></div>
 
     <script>
-        let tabuada = document.getElementById('tabuada')
-        let n1 = prompt("Digite o número da tabuada!")
-        let resultado = "<table><tr>"
-        let multiplicacao = contador*contador2
-        let linha = "" + contador + "x" + contador2 + "=" + multiplicacao + "<br>"
-         
-        for(let contador = 0; contador <= 10; contador++){
-                resultado = resultado + "<td>"
-            for(let contador2 = 0; contador2 <= 10; contador2++){
-                    resultado = resultado + "</td>"
-                
-            }
-            if(i % 5 === 0){
-                resultado = resultado + "<tr></tr>"
-            }     
-        }
+            let tabuada = document.querySelector('div#tabuada')
 
-        resultado = resultado + "</tr></table>"
-        tabuada.append(resultado)
-        
-       
-        
-         
+            function mostrarTabuada(){
+
+                //Quando clicar em mostrarTabuada, pedir para o usuário digitar um número
+                let n1 = Number(prompt("Digite um número"))
+                let msg = ""
+                //depois mostrar a tabuada desse número de 1 a 1000
+
+                for(let contador = 0; contador <= 1000; contador ++){
+                    msg += `${n1} x ${contador} = ${(n1 * contador)} <br>`
+                }
+
+                tabuada.innerHTML = msg 
+                // tabuada.innerHTML = 'Valor qualquer <br> pula linha'
+                //toda informação que vem da interface do usuário é string. OBS temos que converter
+
+            }
+
+            function limparTabuada(){
+
+            }
 
     </script>
 </body>
