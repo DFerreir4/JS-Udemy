@@ -14,7 +14,7 @@
 
     <script>
             let tabuada = document.querySelector('div#tabuada')
-
+            //tabuada é uma variavel global. Pode ser utilizada em várias fuções por não estar presa a um escopo.
             function mostrarTabuada(){
 
                 //Quando clicar em mostrarTabuada, pedir para o usuário digitar um número
@@ -33,7 +33,7 @@
             }
 
             function limparTabuada(){
-
+                tabuada.innerHTML = ""
             }
 
     </script>
