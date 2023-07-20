@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo 2 campos</title>
+</head>
+<body>
+    <h1>Calculo 2 campos</h1>
+    <input type="number" name="n1txt" id="n1txt"> +
+    <input type="number" name="n2txt" id="n2txt">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res"></div>
+
+    <script>
+        
+        function somar(){
+            const n1txt = document.getElementById('n1txt')
+            const n2txt = document.getElementById('n2txt')
+            const res = document.getElementById('res')
+            const n1 = Number(n1txt.value)
+            const n2 = Number(n2txt.value)
+            const s = (n1 + n2)
+            
+
+            res.innerHTML = `<p>O número digitado de n1 foi: <strong>${n1}<strong></p><br>`
+            res.innerHTML += `<p>O número digitado de n2 foi: <strong>${n2}</strong></p><br>`
+            res.innerHTML += `<p>A soma dos dois número é: <strong>${s}</strong></p><br>`
+        }
+
+
+    </script>
+    
+</body>
+</html>
