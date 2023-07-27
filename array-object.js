@@ -24,4 +24,6 @@ const pessoas = [{
 
 }]
 
-console.log(pessoas[0].nome)
+for(let i = 0; i < pessoas.length; i++){
+    console.log(`${pessoas[i].nome} possui ${pessoas[i].idade} anos`)
+}
