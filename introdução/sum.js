@@ -7,12 +7,12 @@ function sum(n1,n2){
 
 
 
-let soma = ""
-try{
-    soma = sum(3,"a")
-} catch(e){
-    console.log("Ocorreu um erro!")
-    console.log(e.message)
-}
+// let soma = ""
+// try{
+//     soma = sum(3,"a")
+// } catch(e){
+//     console.log("Ocorreu um erro!")
+//     console.log(e.message)
+// }
 
-console.log(soma)
+// console.log(soma)
