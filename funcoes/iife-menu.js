@@ -5,12 +5,14 @@
 
 // init()
 
-(function(n1,n2,n3){
+(function(win, doc){
     let isValid = false
-    console.log("init Menu",isValid,n1,n2,n3)
+    win.alert("Olá mundo")
+    console.log("init Menu",isValid)
 
     function init(){
         console.log("init do menu")
     }
     init()
-})(10,25,38)
+})(window, document)
+//para bibliotecas
