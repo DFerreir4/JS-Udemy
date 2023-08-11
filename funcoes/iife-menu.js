@@ -6,8 +6,9 @@
 // init()
 
 (function(win, doc){
+    "use strict"
     let isValid = false
-    win.alert("Olá mundo")
+
     console.log("init Menu",isValid)
 
     function init(){
@@ -16,3 +17,4 @@
     init()
 })(window, document)
 //para bibliotecas
+
