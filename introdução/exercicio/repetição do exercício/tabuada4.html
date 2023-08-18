@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Calcular a tabuada</h1>
+    <input type="button" value="Mostrar tabuada" onclick="mostrarTabuada()">
+    <input type="button" value="Limpar tabuada" onclick="limparTabuada()">
+    <div id="res"></div>
+    
+    <script>
+        let n1 = prompt("Digite um número")
+        let res = document.getElementById('res')
+        let msg = ""
+
+        function mostrarTabuada(){
+           for(let i = 0; i <= 1000; i++){
+            msg +=  `${n1} X ${i} = ${(n1 * i)}<br>`
+            }
+
+            res.innerHTML = msg
+        }
+
+        function limparTabuada(){
+            res.innerHTML = ""
+        }
+    </script>
+</body>
+</html>
