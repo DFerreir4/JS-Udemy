@@ -9,7 +9,11 @@
         // nomeUsua.textContent += nomeUsuario
         nomeUsua.innerHTML += `<b>${nomeUsuario}</b>`
     } else {
-        nomeUsua.parentElement.style.display = "none"
+       // nomeUsua.parentElement.style.display = "none"
+      // nomeUsua.remove() - não funciona no E11
+      const elementoParaRemover = nomeUsua.parentElement
+      elementoParaRemover.parentElement.removeChild(elementoParaRemover)
+
     }
    
     
