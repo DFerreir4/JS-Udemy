@@ -19,23 +19,41 @@
         <input type="text" id="txtNome" placeholder="nome"><br><br>
         <input type="text" id="txtEmail" placeholder="email"><br><br>
 
-        <input type="checkbox" id="contrato" onchange="enableOrDisableButton()">
+        <input type="checkbox" id="contrato" onclick="enableOrDisableButton()">
         <label for="contrato">Li e aceito o seguinte contrato</label><br><br>
         <textarea name="" id="" cols="30" rows="10" readonly>Este contrato nos dá direito à ...</textarea><br><br>
-        <input type="submit" value="cadastrar" class="button" disabled>
+        <input type="submit" value="cadastrar" class="button" >
     </form>
 
     <script>
+
+        const btn = document.querySelector('form input[type="submit"]')
+        btn.disabled = true
         
         function enableOrDisableButton(){
-            const checkbox = document.getElementById("contrato").checked
-            const button = document.querySelector("input.button")
+        //ESSA FORMA FOI A QUE RESPONDI SOZINHO E ESTÁ FUNCIONANDO
 
-            if(checkbox == true){
-            button.disabled = false
-            } else {
-            button.disabled = true
-            }
+        //     const checkbox = document.getElementById("contrato").checked
+        //     const button = document.querySelector("input.button")
+
+        //     if(checkbox){
+        //     button.disabled = false
+        //     } else {
+        //     button.disabled = true
+        //     }
+
+        //FORMA DO PROFESSOR
+        
+            const contrato = document.querySelector('#contrato')
+            let checked = contrato.checked
+
+            // if(checked){
+            //     btn.disabled = false
+            // } else {
+            //     btn.disabled = true
+            // }
+
+            btn.disabled = !checked
         }
 
 
