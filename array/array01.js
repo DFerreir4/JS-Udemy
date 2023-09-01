@@ -14,10 +14,12 @@ const arr1 = arr.filter(function (el, i , _arr) {
     return typeof el === "number"
 })
 
-arr2 = arr.forEach(function(el, i , _arr){
-    console.log(i, " : ",el)
+const arr2 = []
+arr.forEach(function(el, i , _arr){
+    if(typeof el === "number"){
+        console.log(el)
+    }
 })
-
 
 
 console.log(arr)
