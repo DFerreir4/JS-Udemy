@@ -9,5 +9,12 @@ let soNumeros = arr.some( function (elemento) {
 // a diferença é que o every se não retornar o que é pedido ele é false
 // o some o valor que vim se for diferentes , sai verdadeiro
 
-console.log(soNumeros)
+const arr1 = arr.filter(function (el, i , _arr) {
+ 
+    return typeof el === "number"
+})
+
+
+console.log(arr)
+console.log(arr1)
 
