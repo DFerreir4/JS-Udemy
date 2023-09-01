@@ -9,20 +9,27 @@ let soNumeros = arr.some( function (elemento) {
 // a diferença é que o every se não retornar o que é pedido ele é false
 // o some o valor que vim se for diferentes , sai verdadeiro
 
-const arr1 = arr.filter(function (el, i , _arr) {
+let arr1 = arr.filter(function (el, i , _arr) {
  
     return typeof el === "number"
 })
 
-const arr2 = []
+
 arr.forEach(function(el, i , _arr){
     if(typeof el === "number"){
         console.log(el)
     }
 })
 
+let arr2 = arr1.map(function(el,i,_arr){
+    return el * el
+})
+
 
 console.log(arr)
 console.log(arr1)
+console.log(arr2)
+
+
 
 
