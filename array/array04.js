@@ -10,3 +10,7 @@ let ultimoItem = arr[arr.length - 1]
 console.log(ultimoItem)
 console.log(arr)
 
+console.log("-----------")
+let primeiroItem = arr.shift()
+console.log(primeiroItem)
+console.log(arr)
