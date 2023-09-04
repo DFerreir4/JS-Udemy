@@ -23,3 +23,7 @@ console.log("--------SLICE--")
 let arr2 = arr.slice(2,4)
 console.log(arr2)
 console.log(arr)
+
+let arr3 = arr.splice(2,4, "hello word!")
+console.log(arr)
+console.log(arr3)
