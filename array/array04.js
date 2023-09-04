@@ -14,3 +14,7 @@ console.log("-----------")
 let primeiroItem = arr.shift()
 console.log(primeiroItem)
 console.log(arr)
+
+teste = arr.unshift(4,5,6)
+console.log(teste)
+console.log(arr)
