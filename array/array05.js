@@ -55,4 +55,3 @@ let nomesOrdem = nomes.reduce( function (nomes, nomeAtual) {
 },{}) //primeira interação o nome do objeto vazio
 
 console.log(nomesOrdem)
-
